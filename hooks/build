@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build --build-arg GCC_VERSION=${DOCKER_TAG} --build-arg ALPINE_VERSION=${ALPINE_VERSION} -t ${IMAGE_NAME} .
+docker build --build-arg GCC_VERSION=${DOCKER_TAG} --build-arg ALPINE_VERSION=3.10 -t ${IMAGE_NAME} .
