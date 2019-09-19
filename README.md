@@ -17,8 +17,8 @@ $ docker pull n0madic/alpine-gcc:9.1.0
 ```
 $ git clone https://github.com/n0madic/alpine-gcc.git
 $ cd alpine-gcc
-$ docker build --build-arg GCC_VERSION=7.4.0 -t alpine-gcc .
+$ docker build --build-arg GCC_VERSION=7.4.0 --build-arg ALPINE_VERSION=3.10 -t alpine-gcc .
 or
-$ docker build --build-arg GCC_VERSION=8.3.0 -t alpine-gcc .
+$ docker build --build-arg GCC_VERSION=8.3.0 --build-arg ALPINE_VERSION=3.10 -t alpine-gcc .
 $ docker run --rm -it -v $(pwd):/src alpine-gcc
 ```
